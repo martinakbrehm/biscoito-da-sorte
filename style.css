@@ -1,0 +1,141 @@
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+
+
+}
+
+main{
+    border-radius: 0.6rem;
+    background: #FFF;
+
+    box-shadow: 0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.10);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+    margin-top: -12;
+    text-align: center;
+
+}
+
+.hide{
+    display: none;
+}
+
+body, button, input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*screen 1 */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+}
+
+h1, p{
+    color: #34355B;
+}
+
+p{
+    opacity: 0.8;
+}
+
+form {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.screen1 button {
+    border: none;
+    background-color: white;
+}
+
+.fortune-cookie:hover{
+    animation-name: cookie;
+    animation-duration: 0.2s;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    animation-delay: 30ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cookie {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+
+.screen2 h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3.3rem;
+    color: #34355B;
+    font-weight: 700;
+}
+
+
+.screen2 .phrase {
+    margin-top: 1.7rem;
+    width: 100%;
+    padding: 1rem;
+    background: #E4EDF1;
+
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    animation: aumentar 4s forwards;
+    animation-composition: accumulate;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
+}
+
+
+
+@keyframes aumentar{
+    0%{
+        transform:translateY(15rem) scale(0.1);
+    }
+   
+    100%{
+        transform:translateY(0rem) scale(1);
+    
+    }
+}
+
+
+
+
+
+
+.screen2 img {
+    width: 100%
+}
+
+.screen2 button {
+    font-size: 1.5rem;
+    border: none;
+    padding: 1.6rem;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    background: #FF9500;
+}
+
+.screen2 button:hover{
+    background: #ff9500e9;
+}
+
+.screen2 h3 {
+    font-family: "Dancing Script";
+    font-size: 2.4rem;
+
+}
